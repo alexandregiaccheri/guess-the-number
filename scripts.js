@@ -33,6 +33,7 @@ btnConfirm.addEventListener("click", function () {
       } else {
         outputInfo.textContent = "🎉 Você acertou!";
         document.body.classList.add("winner");
+        displayText.textContent = randomNumber;
         if (currentScore > currentHighScore) {
           currentHighScore = currentScore;
           highScore.textContent = currentHighScore;
@@ -41,6 +42,7 @@ btnConfirm.addEventListener("click", function () {
       if (currentScore === 0) {
         outputInfo.textContent = "💔 Você perdeu :(";
         document.body.classList.add("loser");
+        displayText.textContent = randomNumber;
       }
     }
   }
@@ -53,6 +55,7 @@ btnRestart.addEventListener("click", function () {
   outputInfo.textContent = "🎲 Escolha um número...";
   guessInput.value = "";
   document.body.classList.remove("winner", "loser");
+  displayText.textContent = "?";
 });
 
 btnMinus.addEventListener("click", function () {
