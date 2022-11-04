@@ -8,6 +8,10 @@
       name="description"
       content="Jogo simples onde o objetivo é adivinhar o número certo (aleatório) entre 1 e 20 com a menor quantidade possível de tentativas"
     />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/alexandregiaccheri/guess-the-number/main/og-image.jpg"
+    />
 
     <title>Adivinhe o Número</title>
 
@@ -37,7 +41,11 @@
 
       <div class="io-box">
         <div class="input-box">
-          <input class="guess" type="number" min="1" max="20" />
+          <div>
+            <button class="btn-plus-minus minus">➖</button>
+            <input class="guess" type="number" min="1" max="20" />
+            <button class="btn-plus-minus plus">➕</button>
+          </div>
           <button class="btn confirm">Confirmar</button>
         </div>
 

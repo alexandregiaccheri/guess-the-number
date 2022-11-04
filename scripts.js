@@ -2,8 +2,10 @@
 
 const generateNumber = () => Math.floor(Math.random() * 20) + 1;
 
-const btnRestart = document.querySelector(".restart");
 const btnConfirm = document.querySelector(".confirm");
+const btnMinus = document.querySelector(".minus");
+const btnPlus = document.querySelector(".plus");
+const btnRestart = document.querySelector(".restart");
 const displayText = document.querySelector(".display-text");
 const guessInput = document.querySelector(".guess");
 const highScore = document.querySelector(".high-score");
@@ -51,4 +53,12 @@ btnRestart.addEventListener("click", function () {
   outputInfo.textContent = "🎲 Escolha um número...";
   guessInput.value = "";
   document.body.classList.remove("winner", "loser");
+});
+
+btnMinus.addEventListener("click", function () {
+  guessInput.value--;
+});
+
+btnPlus.addEventListener("click", function () {
+  guessInput.value++;
 });
