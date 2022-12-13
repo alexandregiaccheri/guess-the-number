@@ -10,9 +10,9 @@ Game em que o objetivo é adivinhar o número aleatório (entre 1 e 20) com o me
 
 ## Tecnologias utilizadas
 
-1. HTML
-2. CSS (Flexbox e Media Queries)
-3. JavaScript (Event Listener e DOM manipulation)
+- HTML
+- CSS (Flexbox e Media Queries)
+- JavaScript (Event Listener e DOM manipulation)
 
 ## Preview
 
